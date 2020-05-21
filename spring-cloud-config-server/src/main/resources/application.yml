@@ -1,0 +1,17 @@
+
+# ${HOME} means /Users/hilal
+
+
+server:
+      port: 8888
+
+spring:
+      cloud:
+            config:
+                   server:
+                         git:
+                            uri: ${HOME}/spring-cloud-config-server/gitConfigRepo
+
+
+
+## the url to access the config file inside the git repo is "http://localhost:8888/application/default", "application"  is from the name of the yml file , default means the profile is default

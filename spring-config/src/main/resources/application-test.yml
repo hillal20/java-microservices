@@ -1,0 +1,23 @@
+# here we configure the spring profile always
+my:
+  name: Hill
+  greeting: ===== test ,  hello all the word, i am ${my.name} ========
+  listOfValues: one,two,three
+
+carInfo: "{name: 'test-golf', year : 'test-2004', fuel: 'test-diesel'}"
+
+server.port: 8084
+
+db:
+  connection : test connection is here
+  host: 127.3.0.2
+  port: 8086
+
+
+
+
+
+# we ask spring actuator to display all the configuration existing in the properties file, to see all of it one the web type localhost:8084/actuator/configprops
+management.endpoints.web.exposure.include : "*"
+
+
